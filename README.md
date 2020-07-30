@@ -4,4 +4,5 @@
 2. Contacts Manager.
 3. Game Number.
 4. Words Count.
-5. Guess The Title (Simple hangout game)
+5. Guess The Title (Simple hangout game).
+6. Bank Manager (Example of class inheritance).
