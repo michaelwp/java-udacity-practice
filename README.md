@@ -6,3 +6,4 @@
 4. Words Count.
 5. Guess The Title (Simple hangout game).
 6. Bank Manager (Example of class inheritance).
+7. Chess Game item moves validator.
