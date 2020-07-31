@@ -10,7 +10,8 @@ public class Pawn extends Piece{
 
     // overrides the is valid move method
     public boolean isValidMove(Position newPosition) {
-        return ((newPosition.row - this.position.row) == 1) &&
-               (newPosition.column == this.position.column);
+        return  super.isValidMove(newPosition) &&
+                ((newPosition.row - this.position.row) == 1) &&
+                (newPosition.column == this.position.column);
     }
 }

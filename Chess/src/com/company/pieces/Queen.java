@@ -10,7 +10,8 @@ public class Queen extends Piece {
 
     // overrides the is valid move method
     public boolean isValidMove(Position newPosition){
-        return  (Math.abs(newPosition.column - this.position.column) ==
+        return  super.isValidMove(newPosition) &&
+                (Math.abs(newPosition.column - this.position.column) ==
                 Math.abs(newPosition.row - this.position.row)) ||
                 (newPosition.column == this.position.column ||
                 newPosition.row == this.position.row);
