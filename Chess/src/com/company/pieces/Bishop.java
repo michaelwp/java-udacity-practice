@@ -12,7 +12,7 @@ public class Bishop extends Piece {
     // overrides the is valid move method
     public boolean isValidMove(Position newPosition){
         return  super.isValidMove(newPosition) &&
-                Math.abs(newPosition.column - this.position.column) ==
-                Math.abs(newPosition.row - this.position.row);
+                Math.abs(newPosition.getColumn() - this.getPosition().getColumn()) ==
+                Math.abs(newPosition.getRow() - this.getPosition().getRow());
     }
 }

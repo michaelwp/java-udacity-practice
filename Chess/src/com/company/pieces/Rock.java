@@ -11,7 +11,7 @@ public class Rock extends Piece{
     // overrides the is valid move method
     public boolean isValidMove(Position newPosition){
         return  super.isValidMove(newPosition) &&
-                newPosition.column == this.position.column ||
-                newPosition.row == this.position.row;
+                newPosition.getColumn() == this.getPosition().getColumn() ||
+                newPosition.getRow() == this.getPosition().getRow();
     }
 }

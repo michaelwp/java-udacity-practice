@@ -2,8 +2,8 @@ package com.company;
 
 public class Position {
     // public fields
-    public int row;
-    public int column;
+    private int row;
+    private int column;
 
     // constructor
     public Position(int row, int column) {
@@ -12,4 +12,21 @@ public class Position {
         this.column = column;
     }
 
+    /* positions setter */
+    public void setRow(int row) {
+        this.row = row;
+    }
+
+    public void setColumn(int column) {
+        this.column = column;
+    }
+
+    /* positions getter */
+    public int getRow() {
+        return row;
+    }
+
+    public int getColumn() {
+        return column;
+    }
 }
